@@ -1,0 +1,133 @@
+<!-- <?php
+
+if (isset($_POST['nome']) && !empty($_POST['nome'])){
+
+$nome = ucwords(addslashes($_POST['nome']));
+$email = addslashes($_POST['email']);
+$telefone = addslashes($_POST['telefone']);
+$msg = addslashes($_POST['msg']);
+
+$para = "gomes.wesley@outlook.com.br";
+$pergunta = "Email recebido - Dgesso.ml";
+$corpo = "Nome: ".$nome." \r\n".
+		 "Email: ".$email."\r\n".
+		 "Telefone: ".$telefone."\r\n".
+		 "Mensagem: ".$msg;
+
+$cabecalho = "From: wgomes2262@yahoo.com.br"."\r\n".
+"Reply-To: ".$email."\r\n".
+"X-Mailer: PHP/".phpversion();
+
+
+mail($para, $pergunta, $corpo, $cabecalho);
+
+
+	echo  "<script>alert('Email enviado com sucesso!');</script>";
+	header("Location: index.php");
+
+}
+
+?> -->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Recycle now!</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/hover.css" />
+	<link rel="stylesheet" href="assets/css/animate.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+            $('body').find('img[src$="https://cloud.githubusercontent.com/assets/23024110/20663010/9968df22-b55e-11e6-941d-edbc894c2b78.png"]').parent().closest('a').closest('div').remove();
+        });
+	</script>
+</head>
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<div class="logo"><a href="index.html"><img src="images/logor.png" width="150px" height="100%;"></a></div>
+		<a href="#menu" class="toggle"><span>Menu</span></a>
+	</header>
+	<!-- Header -->
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a class="scrolly" href="index.html#one">A organização</a></li>
+			<li><a href="trabalhos.html">Trabalhos</a></li>
+			<li><a href="localizacao.html">Localização</a></li>
+			<li class="active"><a href="facaparte.html">Faça parte</a></li>
+		</ul>
+	</nav>
+	<!-- Nav -->
+
+	<section id="seven" class="wrapper style3">
+		<div class="inner">
+			<div class="box">
+				<div class="content">
+					<h2 class="align-center">Faça parte do nosso time!</h2>
+					<hr />
+					<form action="#" method="post">
+						<div class="field half first">
+							<label for="name">Nome</label>
+							<input name="nome" id="nome" type="text" placeholder="Nome">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field half">
+							<label for="dept">Telefone</label>
+							<input name="telefone" id="sp_celphones" type="text" placeholder="(00) 00000-0000">
+						</div>
+						<div class="field">
+							<label for="message">Mensagem</label>
+							<textarea name="msg" id="mensagem" rows="6" placeholder="Mensagem"></textarea>
+						</div>
+						<ul class="actions align-center">
+							<li><input value="Enviar" class="button special" type="submit"></li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper">
+		<div class="inner">
+			<div class="copyright">
+				<ul class="mapa">
+					<li><a class="hvr-grow scrolly" href="index.html">Home</a></li>
+					<li><a class="hvr-grow scrolly" href="index.html#one">A organização</a></li>
+					<li><a class="hvr-grow" href="trabalhos.html">Trabalhos</a></li>
+					<li><a class="hvr-grow" href="localizacao.html">Localização</a></li>
+					<li><a class="hvr-grow" href="facaparte.html">Faça parte</a></li>
+				</ul>
+				&copy;Copyright 2017 - Todos os direitos reservados.<br>
+				Desenvolvido por : <a href="http://www.wesleygomes.pe.hu" target="_blank" class="portfolio" >Wesley Gomes</a>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer -->
+
+	<!-- Scripts -->
+
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/jquery.mask.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/wow.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
